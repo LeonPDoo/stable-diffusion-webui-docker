@@ -14,7 +14,8 @@ RUN --mount=type=cache,target=/root/.cache/pip \
 
 WORKDIR ${ROOT}
 COPY . /docker/
-RUN chmod u+x /docker/entrypoint.sh && cp /docker/extra_model_paths.yaml ${ROOT}
+RUN chmod u+x /docker/entrypoint.sh 
+#&& cp /docker/extra_model_paths.yaml ${ROOT}
 RUN chmod u+x /docker/
 
 ENV NVIDIA_VISIBLE_DEVICES=all PYTHONPATH="${PYTHONPATH}:${PWD}" CLI_ARGS=""
