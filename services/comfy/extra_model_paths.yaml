@@ -1,6 +1,6 @@
 a111:
   models: /data/models #base_path
-  custom_nodes: /data/custom_nodes
+  custom_nodes: config/comfy/custom_nodes
 
   #checkpoints: models/Stable-diffusion
   #configs: models/Stable-diffusion
