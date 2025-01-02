@@ -18,7 +18,7 @@ a111:
   #embeddings: embeddings
   unet: models/unet
 
-  custom_nodes: /config/comfy/custom_nodes
+  custom_nodes: config/comfy/custom_nodes
   
 
   # TODO: I am unsure about these, need more testing
