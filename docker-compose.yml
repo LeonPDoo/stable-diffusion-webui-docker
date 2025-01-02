@@ -23,21 +23,6 @@ services:
     volumes:
       - *v1
 
-  auto: &automatic
-    <<: *base_service
-    profiles: ["auto"]
-    build: ./services/AUTOMATIC1111
-    image: sd-auto:78
-    environment:
-      - CLI_ARGS=--allow-code --medvram --xformers --enable-insecure-extension-access --api
-
-  auto-cpu:
-    <<: *automatic
-    profiles: ["auto-cpu"]
-    deploy: {}
-    environment:
-      - CLI_ARGS=--no-half --precision full --allow-code --enable-insecure-extension-access --api
-
   comfy: &comfy
     <<: *base_service
     profiles: ["comfy"]
