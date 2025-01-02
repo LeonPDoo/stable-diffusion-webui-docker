@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
 
-set -Eeuo pipefail
+#set -Eeuo pipefail
 
 # TODO: maybe just use the .gitignore file to create all of these
-mkdir -vp /data/.cache \
-  /data/embeddings \
-  /data/config/ \
-  /data/models/ \
-  /data/custom_nodes/ \
+#mkdir -vp /data/.cache \
+#  /data/embeddings \
+#  /data/config/ \
+#  /data/models/ \
+#  /data/custom_nodes/ \
 
 echo "Downloading Models, this might take a while..."
 
