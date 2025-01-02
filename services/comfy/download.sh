@@ -29,6 +29,5 @@ wget "https://huggingface.co/LeonP/VF/resolve/main/ae.safetensors" -O /data/mode
 ######################################################
 
 echo "Downloading and Installing Custom Nodes, this might take a while..."
-
-git clone https://github.com/ltdrdata/ComfyUI-Manager
+git clone https://github.com/ltdrdata/ComfyUI-Manager /data/custom_nodes/
 pip install -r /data/custom_nodes/ComfyUI-Manager/requirements.txt
