@@ -16,13 +16,11 @@ RUN --mount=type=cache,target=/root/.cache/pip \
 
 WORKDIR ${ROOT}
 COPY . /docker/
-
-RUN chmod +x /docker/download.sh
-ENTRYPOINT ["/docker/download.sh"]
-
 RUN chmod u+x /docker/entrypoint.sh && cp /docker/extra_model_paths.yaml ${ROOT}
 
 ENV NVIDIA_VISIBLE_DEVICES=all PYTHONPATH="${PYTHONPATH}:${PWD}" CLI_ARGS=""
 EXPOSE 7860
 ENTRYPOINT ["/docker/entrypoint.sh"]
+RUN chmod +x /docker/download.sh
+ENTRYPOINT ["/docker/download.sh"]
 CMD python -u main.py --listen --port 7860 ${CLI_ARGS}
