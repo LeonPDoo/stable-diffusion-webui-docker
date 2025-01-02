@@ -28,4 +28,4 @@ if [ -f "/data/config/comfy/startup.sh" ]; then
   popd
 fi
 
-exec /data/services/comfy/download.sh "$@"
+exec /services/comfy/download.sh "$@"
