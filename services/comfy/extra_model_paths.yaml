@@ -1,23 +1,25 @@
 a111:
-  base_path: /data
+  models: /data/models #base_path
+  custom_nodes: /data/custom_nodes
 
-  checkpoints: models/Stable-diffusion
-  configs: models/Stable-diffusion
-  vae: models/VAE
-  loras: models/Lora
-  upscale_models: |
-    models/RealESRGAN
-    models/ESRGAN
-    models/SwinIR
-    models/GFPGAN
-  hypernetworks: models/hypernetworks
-  controlnet: models/ControlNet
-  gligen: models/GLIGEN
-  clip: models/clip
-  embeddings: embeddings
-  unet: models/unet
+  #checkpoints: models/Stable-diffusion
+  #configs: models/Stable-diffusion
+  #vae: models/VAE
+  #loras: models/Lora
+  #upscale_models: |
+    #models/RealESRGAN
+    #models/ESRGAN
+    #models/SwinIR
+    #models/GFPGAN
+  #hypernetworks: models/hypernetworks
+  #controlnet: models/ControlNet
+  #gligen: models/GLIGEN
+  #clip: models/clip
+ #embeddings: embeddings
+  #unet: models/unet
 
-  custom_nodes: config/comfy/custom_nodes
+  #custom_nodes: config/comfy/custom_nodes
+  
 
   # TODO: I am unsure about these, need more testing
   # style_models: config/comfy/style_models
