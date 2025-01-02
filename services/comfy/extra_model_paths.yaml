@@ -13,7 +13,7 @@ a111:
   hypernetworks: models/hypernetworks
   controlnet: models/ControlNet
   gligen: models/GLIGEN
-  clip: models/CLIPEncoder
+  clip: models/clip
   embeddings: embeddings
   unet: models/unet
 
