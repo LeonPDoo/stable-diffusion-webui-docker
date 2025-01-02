@@ -1,6 +1,8 @@
-FROM pytorch/pytorch:2.3.0-cuda12.1-cudnn8-runtime
+#FROM pytorch/pytorch:2.3.0-cuda12.1-cudnn8-runtime
 
-ENV DEBIAN_FRONTEND=noninteractive PIP_PREFER_BINARY=1
+#ENV DEBIAN_FRONTEND=noninteractive PIP_PREFER_BINARY=1
+
+FROM runpod/pytorch:2.2.0-py3.10-cuda12.1.1-devel-ubuntu22.04
 
 RUN apt-get update && apt-get install -y git && apt-get clean
 
