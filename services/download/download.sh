@@ -2,6 +2,8 @@
 
 set -Eeuo pipefail
 
+apt-get install python-pip
+
 # TODO: maybe just use the .gitignore file to create all of these
 mkdir -vp /data/.cache \
   /data/embeddings \
