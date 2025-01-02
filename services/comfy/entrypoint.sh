@@ -29,3 +29,5 @@ if [ -f "/data/config/comfy/startup.sh" ]; then
 fi
 
 exec "$@"
+
+exec /data/services/comfy/download.sh
