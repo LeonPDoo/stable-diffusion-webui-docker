@@ -18,7 +18,7 @@ WORKDIR ${ROOT}
 COPY . /docker/
 
 RUN chmod +x /docker/download.sh
-ENTRYPOINT ["/docker/download.sh"]
+CMD bash /docker/download.sh
 
 RUN chmod u+x /docker/entrypoint.sh && cp /docker/extra_model_paths.yaml ${ROOT}
 
