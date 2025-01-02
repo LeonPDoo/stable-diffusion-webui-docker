@@ -2,7 +2,7 @@ https://huggingface.co/LeonP/VF/resolve/main/flux1-dev-fp8.safetensors
   out=unet/flux1-dev-fp8.safetensors
 
 https://huggingface.co/LeonP/VF/resolve/main/ae.safetensors
-  out=vae/ae.safetensors
+  out=VAE/ae.safetensors
 
 https://huggingface.co/comfyanonymous/flux_text_encoders/resolve/main/t5xxl_fp16.safetensors
   out=clip/t5xxl_fp16.safetensors
